@@ -19,7 +19,7 @@ public class Intero{
     }
 
     /**
-     * controlla se il numero è pari
+     * controlla se il numero e' pari
      * 
      * @param 
      * @return boolean
@@ -34,7 +34,7 @@ public class Intero{
     }
 
     /**
-     * controlla se il numero è dispari
+     * controlla se il numero e' dispari
      * 
      * @param 
      * @return boolean
@@ -49,7 +49,7 @@ public class Intero{
     }
 
     /**
-     * controlla se il numero è nullo
+     * controlla se il numero e' nullo
      * 
      * @param 
      * @return boolean
@@ -64,7 +64,7 @@ public class Intero{
     }
 
     /**
-     * controlla se il numero è negativo
+     * controlla se il numero e' negativo
      * 
      * @param 
      * @return boolean
@@ -79,7 +79,7 @@ public class Intero{
     }
 
     /**
-     * controlla se il numero è positivo
+     * controlla se il numero e' positivo
      * 
      * @param 
      * @return boolean
@@ -94,7 +94,7 @@ public class Intero{
     }
 
     /**
-     * controlla se un numero è primo
+     * controlla se un numero e' primo
      * 
      * @param
      * @return 
@@ -114,7 +114,7 @@ public class Intero{
      * @param 
      * @return int
      */
-    int toInt(){
+    public int toInt(){
         return this.valore;
     }
 
