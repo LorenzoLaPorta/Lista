@@ -1,17 +1,32 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class ListaIntero{
+
+    final static ArrayList<Integer> lista = new ArrayList<Integer>(); //lista che contiene oggetti
+
+    public ListaIntero() {
+    }
+
+    public static void aggiungiInTesta(Integer val){
+        lista.add(0, val);
+    }
+    public static void aggiungiInCoda(Integer val){
+        lista.add(val);
+    }
+
     public static void main(String[] args){
-        Intero i1 = new Intero(14);
-        Intero i2 = new Intero(7);
-        Intero i3 = new Intero(21);
-        ArrayList<Intero> lista = new ArrayList<Intero>(); //lista che contiene oggetti
+        final int maxElementi = 12; //costante che contiene il numero massimo di elementi random da inserire nella lista
+        final int maxNumeroRandom = 101; //costante che contiene il numero massimo (-1) da generare casualmente
 
-        lista.add(i1);
-        lista.add(i2);
-        lista.add(i3);
-        lista.add(new Intero(89));
+        Integer randomNum;
 
-        System.out.println("Lista: " + lista);
+        //aggiungiInTesta(randomNum);
+        for (int i = 0; i < maxElementi; i++){
+            randomNum = (int)(Math.random() * maxNumeroRandom);
+            aggiungiInCoda(randomNum);
+        }
+
+        System.out.println("La lista e' composta da: " + lista);
     }
 }
